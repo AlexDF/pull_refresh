@@ -264,6 +264,17 @@
 
                         this.setHeight(60);
                         this.handler.call(this);
+                      
+		        if (playing === 1) {
+			  document.getElementById("audioplayer").pause();
+			  playing = 0;
+			} else {
+                            document.getElementById("audioplayer").play();
+			    playing = 1;
+			}
+			this.hide();
+
+
                     }
                     // just hide it
                     else {
